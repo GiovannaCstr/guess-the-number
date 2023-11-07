@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-[#12214b] font-inter text-white">
+    <main class="flex justify-center items-center h-screen">
+        <div class="text-center">
+            <h1 class="text-5xl text-amber-400 mb-6 font-titan">Can you guess the number?</h1>
+            <p class="mb-6">A random number will be generated, between 1 and 100. Try to get it right in as few tries as possible</p>
+            <input type="number" placeholder="Type a number here" id="inptNumber" max="10" class="w-72 px-3.5 py-1 rounded-2xl text-black outline-none mr-2">
+            <button id="btnTry" class="bg-teal-500 px-5 py-1 rounded-2xl hover:bg-teal-700 text-black">Try it</button>
+            <div id="divResult"></div>
+            <p id="showAttempts"></p>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
